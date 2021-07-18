@@ -6,9 +6,13 @@
     "gulp"
   ],
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/*.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/macacajs/gulp-uitest.git"
+    "url": "git://github.com/xudafeng/gulp-uitest.git"
   },
   "dependencies": {
     "through2": "^2.0.1",
@@ -17,6 +21,7 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-mocha": "^5.0.0",
+    "git-contributor": "1",
     "husky": "*",
     "mocha": "*",
     "nyc": "^15.0.0"
@@ -28,7 +33,8 @@
   },
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix .",
+    "contributor": "git-contributor"
   },
   "license": "MIT"
 }
